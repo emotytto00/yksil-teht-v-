@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>Restaurant App</h1>
+    </header>
+    <main>
+        <div id="map"></div>
+        <table id="restaurant-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </main>
+    <dialog id="restaurant-dialog">
+        <!-- Dialog content will be dynamically added here -->
+    </dialog>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
