@@ -1,5 +1,7 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -41,6 +43,8 @@ main {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .close {
@@ -59,4 +63,7 @@ main {
 
 #map {
   height: 500px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
