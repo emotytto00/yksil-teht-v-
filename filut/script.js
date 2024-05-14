@@ -1,24 +1,19 @@
 document.addEventListener('DOMContentLoaded', async () => {
-  // Leaflet map initialization
-  const map = L.map('map').setView([60.17, 24.94], 12); // Centered on Helsinki
+  const map = L.map('map').setView([60.17, 24.94], 12);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(map);
 
-  // Fetching restaurant data and creating table
   const restaurants = await fetchRestaurants();
   sortRestaurants(restaurants);
   createTable(restaurants);
   createCityFilter(restaurants);
 
-  // Add markers to map for each restaurant
   addMarkersToMap(restaurants, map);
 
-  // Highlight nearest restaurant
   highlightNearestRestaurant(restaurants, map);
 
-  // Add user location marker
   addCurrentUserLocationMarker(map);
 });
 
